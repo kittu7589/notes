@@ -15,6 +15,6 @@ ls -l
 pwd
 ```
 
-** this 
+* this 
 
-**  second point
+* second point
