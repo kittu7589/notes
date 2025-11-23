@@ -1,0 +1,29 @@
+roject name:- TATAPLAY BINGE (OTT Application)
+
+
+1.we are supporting  and maintaining to tataplay binge application,It's a OTT Platform Like Hotstar,netflix.
+2.we are Part of L1 team our major work is monitoring
+3.monitor purpose we are using Grafana dashboard, here we can see the workflow by period of hours
+   (ex: 9-10 how many create customer request came, how many add or update product request came and how many success,failed,inprogress,cancelled)
+4.Whenever user trying to install our application we are getting a request in HBST_CST_CUSTOMER_REQUEST table
+5. in that table we can see the customer status wether created or not if user facing any issue to install we can get one alert based alert well trouble shoot on that
+6.and same  as whenever existing user trying to do recharge(monthly,quartarly,annual) we we are getting request in PAYPEM_Transaction table
+7.In that table we can see the transaction status(success,failed, Inprogress, cancelled) if transaction faild have to check the logs in KIBANA
+   most of the failed request happend due to low balance
+8.if any transaction status is not success then we are getting an alert on it
+9.sometimes customer amount is debited twice, in that case we will rise that transaction to OPEL team they generated refund to customer with in 5 days.
+10. we are using for kubernets for diployement, senior team only will do deployement, on daily basis we are checking Kubernets pods by using "pod1 podname"
+11. daily we are sending reports to client, success report, Failed report
+12. we are working on crontab based on client requirement we will change the schedules
+13.we are working on a file permissions.
+14.and create customer delete customer request will get
+15.and we are checking CPU utilization by using (top)
+16.disk space by using (df -h command)
+17.memory utilization by using (free -m)
+
+
+
+ 
+ticketing tool: Onedesk
+monitoring tool: Grafana
+to check the logs: Kibana.
